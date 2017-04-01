@@ -1,4 +1,4 @@
-﻿class MyClass { 
+﻿class MyClass {
     constructor(dtToday) {
         this.dtToday = dtToday;
     };
@@ -9,10 +9,8 @@
     };
 }
 $(function () {
-    $("#btnClick").click(function () {
-        var myCls = new MyClass(new Date().toDateString());
-        myCls.callClickEvent();
-    });
+    var myCls = new MyClass(new Date().toDateString());
+    myCls.callClickEvent();
 });
 
 
