@@ -10,7 +10,7 @@
 }
 $(function () {
     $("#btnClick").click(function () {
-        var myCls = new MyClass(new Date());
+        var myCls = new MyClass(new Date().toDateString());
         myCls.callClickEvent();
     });
 });
